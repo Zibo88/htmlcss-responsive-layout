@@ -16,8 +16,7 @@ body {
 .container{
     max-width: 1170px;
     width: 95%;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 
 .flex {
@@ -26,6 +25,12 @@ body {
 
 .mobile-padding {
     padding: 0 1rem;
+    width: 72%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
 }
 
 
@@ -42,7 +47,7 @@ header .container {
 }
 
 #hamburger-menu {
-    /* font-size: ; */
+    font-size: 25px;
 }
 
 .header-menu {
@@ -58,19 +63,115 @@ nav {
 
 /* Sezione ACTIVITY */
 
+.activity{
+    padding-bottom: 2rem;
+}
+
 .container-columns.top.mobile-padding .col, 
 .container-columns.down.mobile-padding .col {
-    border: 1px solid red;
-    padding: 2rem 0;
+    margin-top: 1.5rem;
     border-radius: 10px;
-    border: 1px solid blue;
     background-color: #b5ddff;
 }
 
 .col .card {
-    border: 1 px solid black;
     border-radius: 10px;
 }
+
+.card{
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.card-content.flex {
+    width: 90%;
+    padding: 2rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.card-content h3{
+    color: #1289fe;
+    margin: 1rem 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-content i{
+    color: #1289fe;
+    margin: 0.6rem 0;
+    font-size: 70px;
+}
+
+.text {
+    color: #647a8d;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.text-white{
+    color: white;
+    margin: 1rem 0;
+}
+
+.bcg-violet {
+    background-color: #9792e3;
+}
+
+
+
+
+
+
+/* bottone */
+
+.apple-store.flex {
+    width: 200px;
+    /* margin: 0 auto; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #0084fd;
+    color: white;
+    padding: 0,4rem 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.apple-store.flex div{
+    font-size: 1rem;
+    margin: 0 0 0 0.7rem;
+}
+
+.apple-store.flex div, #apple {
+    padding: 0.3rem 0;
+}
+
+#apple{
+    color: white;
+    font-size: 1rem;
+}
+
+.apple-store.flex:hover div, .apple-store.flex:hover #apple {
+    color: black;
+    cursor: pointer;
+}
+
+.img-container.flex {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    
+    
+}
+
+
 
 /* Sezione STRATEGIC */
 
@@ -83,10 +184,64 @@ nav {
     padding: 2rem 0;
     border-radius: 10px;
     padding: 1rem 0;
-    border: 1px solid blue;
     color: #657b8f;
     background-color: #9792e3;    
 }
+
+.card-content-violet.flex {
+    width: 90%;
+    padding-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    margin: 0 auto;
+}
+
+/* Titolo */
+.card-content-violet.flex h2{
+    color: white;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    font-size: 30px;
+}
+
+#end-card {
+    background-color: white;
+    border-radius: 3rem;
+}
+
+/* testo */
+.text-italic {
+    font-style: italic;
+    color: black;
+    line-height: 35px;
+}
+
+.card-content.flex .title-black{
+    color: black;
+}
+
+.button-circle.bcg-violet{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%; 
+    position: relative;
+}
+
+.arrow-down i{
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
 
 /* Sezione Testimonial */
 
@@ -95,16 +250,58 @@ nav {
 }
 
 .testimonial .container-columns.mobile-padding .col {
-    border: 1px solid yellow;
     padding: 2rem 0;
     border-radius: 10px;
     padding: 1rem 0; 
 }
 
+.card-content.flex.bcg-violet{
+    width: 90%;
+    padding: 2rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 2rem;
+    
+}
+
+.testimonial .card{
+    border-radius: 1rem;
+}
+
 .testimonial .container-columns.mobile-padding .col .card {
-    background-color: #9792e3;
     padding: 0 2rem;
 }
+
+.testimonial .container-columns.mobile-padding .col .card.bcg-white{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+}
+
+.testimonial .container-columns.mobile-padding .col .card.bcg-white h3 {
+    color: #9792e3;
+    font-size: 30px;
+}
+
+.testimonial .container-columns.mobile-padding .col .card.bcg-white p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.testimonial-img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+
+
+
 
 /* Sezione Benefit */
 
@@ -204,7 +401,7 @@ MEDIA
 
 /* HEADER */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
     #hamburger-menu i {
         display: none;
     }
@@ -213,13 +410,36 @@ MEDIA
         display: block;
     }
 
-   .header-menu ul {
+   .header-menu .header-menu-list {
        list-style-type: none;
        display: flex;
+       align-items: center;
    }
 
+    .header-menu-list .header-menu-item {
+        padding: 0 1rem;
+    }
 
+    .get-started {
+        background-color: white;
+        display: inline-block;
+        padding: 0.3rem 0.8rem;
+        text-decoration: none;
+        color: black;
+        border-radius: 1rem;
+    }
+
+    .header-menu-item:hover  {
+        color: greenyellow;
+    }
+
+    .header-menu-item:hover .get-started {
+        transform: scale(1.2);
+        color: greenyellow;
+    }
+    
 }
+
 
 /* Main sezione ACTIVITY */
 @media screen and (min-width: 768px){
@@ -231,9 +451,6 @@ MEDIA
     .container-columns.top.mobile-padding {
         display: flex;
         justify-content: space-between;
-        /* padding: 0.5rem 0;
-        margin-left: 0.95rem;
-        margin-right: 0.95rem; */
     }
     .container-columns.top.mobile-padding .col:first-child{
         width: 66%;
@@ -246,36 +463,80 @@ MEDIA
     .container-columns.down.mobile-padding {
         display: flex;
         justify-content: space-between;
-        border: 1px solid black;
         margin-top: 1rem;
-
     }
 
 
     .container-columns.down.mobile-padding .col{
         width: calc((100% / 3) - 1.3rem);
-        border: 1px solid black ;
+    }
+
+    #end-card .card-content.flex{
+        padding:0.3rem 0rem;
+    }
+
+    #end-card .card-content.flex img {
+        margin-top: 0.5rem;
     }
 
 }
 
 @media screen and (min-width:992px) {
+    .card{
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-container.flex {
+        width: 85%;
+        margin: 0 auto;
+        justify-content: center;
+        margin-top: 5rem;
+    } 
+
+    .card-content.flex .text{
+        padding-left: 1rem;
+    }
+
+    .col #end-card {
+        margin-top: 5rem;
+    }
+   
+}
+
+@media screen and (min-width:1100px) {
+    .card-content.flex #p-1100px {
+        padding-left: 1.5rem;
+    }
+}
+
+
+
+/* sezione strategic */
+@media screen and (min-width:992px) {
     .strategic .container-columns.mobile-padding {
         display: flex;
+        width: 80%;
+        margin:0 auto;
     }
 
     .strategic .container-columns.mobile-padding .col {
         padding: 0 1rem;
     }
 
+    .strategic-planning-img{
+        width: 65%;
+        margin-top: 2rem;
+    }
+
     #end-card {
        align-items: flex-end;
     }
 
-
-     
-
 }
+
+
 
 /* Sezione benefit */
 @media  screen and (min-width:768px) {
@@ -289,11 +550,7 @@ MEDIA
     .benefit .container-columns.mobile-padding .col {
         width: calc((100% / 2) - 1rem);
 
-    }
-
-
-
-    
+    }  
 }
 
 @media  screen and (min-width:992px) {
@@ -305,7 +562,6 @@ MEDIA
 
     .benefit .container-columns.mobile-padding .col {
         width: calc((100% / 3) - 1rem);
-
     }
 }
 
@@ -326,10 +582,6 @@ MEDIA
     .about-us .container-columns.mobile-padding .col:first-child{
         width: 65%;
     }
-
-
-
-
 }
 
 
