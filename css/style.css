@@ -33,6 +33,46 @@ img {
     width: 100%;
 }
 
+.white{
+    color: white;
+}
+
+.bcg-white {
+    background-color: white;
+}
+
+.bcg-violet {
+    background-color: #9792e3;
+}
+
+.violet {
+    color: #9792e3;
+}
+
+.btn-violet {
+    background-color: #9792e3;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 1.2rem;
+    margin: 1rem 0;
+}
+
+.btn-white {
+    background-color: white;
+    color: #9792e3;
+    padding: 0.4rem 1rem;
+    border-radius: 1.2rem;
+    margin: 1rem 0;
+}
+
+section {
+    padding: 1.5rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 /* HEADER */
 
@@ -82,7 +122,6 @@ nav {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    padding: 1rem;
 }
 
 .card-content.flex {
@@ -92,8 +131,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .card-content h3{
@@ -119,15 +157,6 @@ nav {
     color: white;
     margin: 1rem 0;
 }
-
-.bcg-violet {
-    background-color: #9792e3;
-}
-
-
-
-
-
 
 /* bottone */
 
@@ -166,9 +195,7 @@ nav {
 .img-container.flex {
     width: 70%;
     margin: 0 auto;
-    justify-content: center;
-    
-    
+    justify-content: center;   
 }
 
 
@@ -176,8 +203,7 @@ nav {
 /* Sezione STRATEGIC */
 
 .strategic .container {
-    padding-bottom: 1rem;
-    
+    padding-bottom: 1rem;  
 }
 
 .strategic .container-columns.mobile-padding .col {
@@ -205,7 +231,7 @@ nav {
     font-size: 30px;
 }
 
-#end-card {
+#second-card {
     background-color: white;
     border-radius: 3rem;
 }
@@ -240,9 +266,6 @@ nav {
 }
 
 
-
-
-
 /* Sezione Testimonial */
 
 .testimonial .container {
@@ -263,8 +286,7 @@ nav {
     align-items: center;
     margin: 0 auto;
     text-align: center;
-    border-radius: 2rem;
-    
+    border-radius: 2rem;  
 }
 
 .testimonial .card{
@@ -272,7 +294,7 @@ nav {
 }
 
 .testimonial .container-columns.mobile-padding .col .card {
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .testimonial .container-columns.mobile-padding .col .card.bcg-white{
@@ -299,14 +321,22 @@ nav {
     padding: 0.5rem;
 }
 
-
-
+.card-content.flex.bcg-violet .text-white i {
+    color: white;
+    font-size:  20px;
+}
 
 
 /* Sezione Benefit */
 
-.benefit .container {
-    padding-bottom: 1rem;   
+
+
+.benefit .container h2{
+    padding-bottom: 1rem;
+    text-align: center; 
+    color: white; 
+    font-size: 30px; 
+    padding-top: 2rem;
 }
 
 .benefit .container-columns.mobile-padding .col {
@@ -314,11 +344,23 @@ nav {
     padding: 2rem 0;
     border-radius: 10px;
     padding: 1rem 0;
-    
+    margin: 1rem 0;
 }
 
 .benefit .container-columns.mobile-padding .col .card {
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
+}
+
+.benefit .container-columns.mobile-padding .col.bcg-white .card h3 {
+    font-size: 50px;
+}
+
+.benefit .container-columns.mobile-padding .col.bcg-white .card h5 {
+    font-size: 20px;
+}
+
+.benefit .container-columns.mobile-padding .col.bcg-white .card p {
+    margin: 1.3rem 0;
 }
 
 /* sezione ABOUT US */
@@ -328,31 +370,96 @@ nav {
     
 }
 
+.about-us .container .card h2 {
+    font-size: 40px;
+}
+
+.about-us .container .card p {
+    margin: 1rem 0 0 0;
+}
+
+#about-us-img.violet{
+    position: relative;
+}
+
+.about-us .container .card a {
+    display: inline-block;
+}
+
+#about-us-img.violet img{
+    border-radius: 50%;  
+}
+
+#about-us-img.violet i {
+    position: absolute;
+    right: 0.1rem;
+    font-size: 50px;
+}
+
+#about-us-p.violet {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
 .about-us .container-columns.mobile-padding .col {
-   
     padding: 2rem 0;
     border-radius: 10px;
     padding: 1rem 0;
-
-    /* test */
-    border: 1px solid violet;
-    
 }
 
 .about-us .container-columns.mobile-padding .col .card {
     padding: 0 2rem;
 }
 
-/* sezione get-started */
+/* sezione GET-STARTED */
 
-.get-started {
-    background-color: #9792e3;
+.get_started.bcg-violet {
+    text-align: center;
 }
-.get-started-container {
-    max-width: 80%;
+
+.get_started.bcg-violet .container-columns.mobile-padding {
+    padding: 1.5rem 0;
+}
+
+.get_started.bcg-violet .container-columns.mobile-padding h6{
+    color: #a7a4e8;
+    font-size: 15px;
+    font-weight: 100;  
+}
+
+.get_started.bcg-violet .container-columns.mobile-padding h4 {
+    margin: 1.5rem 0;
+    color: white;
+    font-size: 30px;
+}
+
+.get_started.bcg-violet .container-columns.mobile-padding h2{
+    font-size: 60px;
+    color: #fdc05f;
+}
+
+.container_small {
+    width: 55%;
     margin: 0 auto;
     text-align: center;
-    padding: 2rem 0;    
+    padding: 1.5rem 0;
+}
+
+.container_small p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.container_small span {
+    color: white;
+    font-size: 12px;
+}
+
+.container_small #privacy_police {
+    color: white;
+    text-decoration: underline;
+    font-size: 12px;
 }
 
 /* FOOTER */
@@ -369,31 +476,10 @@ footer {
 }
 
 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 ********************************************************
 
-MEDIA
+                        MEDIA
 
 ******************************************************** */
 
@@ -526,13 +612,28 @@ MEDIA
     }
 
     .strategic-planning-img{
-        width: 65%;
+        width: 80%;
         margin-top: 2rem;
     }
 
-    #end-card {
-       align-items: flex-end;
+    #second-card{
+        margin-top:9rem;
     }
+
+    #second-card .card-content.flex img {
+        width: 80%;
+    }
+
+    .text-italic {
+        line-height: 20px;
+    }
+
+    .button-circle.bcg-violet {
+        width: 50px;
+        height: 50px;
+    }
+    
+    
 
 }
 
@@ -562,6 +663,23 @@ MEDIA
 
     .benefit .container-columns.mobile-padding .col {
         width: calc((100% / 3) - 1rem);
+        margin: 1rem 0;
+    }
+}
+
+/* sezione TESTIMONIAL */
+@media screen and (min-width:768px){
+    .card-content.flex.bcg-violet {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .testimonial-img {
+        margin-left: 1rem;
+    }
+    .caption_card.white {
+        padding-right: 1rem;
     }
 }
 
@@ -581,6 +699,28 @@ MEDIA
 
     .about-us .container-columns.mobile-padding .col:first-child{
         width: 65%;
+    }
+
+    #about-us-img.violet i {
+        position: absolute;
+        right: 0.1rem;
+        font-size: 43px;
+    }
+
+    #about-us-p.violet {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 1rem 0;
+    }
+}
+
+
+
+@media screen and (min-width:992px) {
+    #about-us-img.violet i {
+        position: absolute;
+        right: 0.1rem;
+        font-size: 58px;
     }
 }
 
